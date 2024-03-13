@@ -79,7 +79,7 @@ p {
     margin-right: 10px;
     animation: bounceIn 0.5s ease-in-out;
 }
-/* 
+
 @keyframes bounceIn {
 
     0%,
@@ -97,7 +97,7 @@ p {
     60% {
         transform: translateY(-10px);
     }
-} */
+}
 
 .projects p,
 .achievements p {
@@ -116,7 +116,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vw;
+    height: 100%;
     background-color: #f0f0f0;
 }
 
