@@ -1,83 +1,146 @@
-body {
-  font-family: Arial, sans-serif;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("forest.jpg"); /* Replace with your image file name */
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+/* Navbar Styles */
+.navbar {
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-image: url("asphalt-dark-dawn-531321.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  justify-content: space-between;
+  padding: 1rem 5%;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+  color: #fff;
   position: relative;
-  background-attachment: fixed;
-  /* backdrop-filter: blur(3px); */
 }
 
-.login-container {
-  /* background-image: url("pic1.jpg"); */
-  backdrop-filter: blur(3px);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  background-attachment: inherit;
-  /* background-color: rgb(76, 180, 39); */
-  padding-top: 20px;
-  padding-bottom: 30px;
-  padding-left: 20px;
-  padding-right: 50px;
+.navbar .logo a {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar .links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar .action-btn {
+  background-color: orange;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.toggle_btn {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Dropdown Menu */
+.dropdown_menu {
+  display: none;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  position: absolute;
+  top: 70px;
+  right: 5%;
+  width: 200px;
+  border-radius: 8px;
+}
+
+.dropdown_menu li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.dropdown_menu a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar .links,
+  .navbar .action-btn {
+    display: none;
+  }
+
+  .toggle_btn {
+    display: block;
+  }
+
+  .dropdown_menu {
+    display: flex;
+  }
+}
+
+/* Login Box */
+.login-box {
+  width: 350px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgb(0 0 0 / 77%);
+  margin: 100px auto;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 
-.login-container h2 {
+.login-box h2 {
   margin-bottom: 20px;
-  color: #fff5f5;
-  /* backdrop-filter: blur(5px); */
 }
 
-.input-group {
+.login-box label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
   margin-bottom: 15px;
 }
 
-.input-group label {
-  display: block;
-  margin-bottom: 5px;
-  color: rgb(255, 255, 255);
-  /* backdrop-filter: blur(5px); */
+.login-box .buttons {
+  display: flex;
+  justify-content: space-between;
 }
 
-.input-group input {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-button {
-  background-color: #ffffff;
-  color: #000000;
-  border: none;
+.login-box button {
   padding: 10px 20px;
-  border-radius: 15px;
-  margin-left: 20px;
-}
-
-#go-home-button {
-  margin-top: 20px;
-  background-color: #ffffff;
-  color: #000000;
-  text-align: right;
-  padding: 10px;
-}
-#go-home-button:hover {
-  background-color: #05452b;
-  color: white;
-}
-
-button:hover {
-  background-color: #05452b;
-  filter: invert(50px);
+  border: none;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
 }
