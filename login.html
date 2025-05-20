@@ -1,30 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="login.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page with Navbar</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="login.css">
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="login-container">
-        <h2>Login</h2>
-        <form action="login_process.php" method="post">
-            <div class="input-group">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="input-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button id="login" type="submit">Login</button>
-            <a href="index.html">
-  <button type="button">Go to Home</button>
-</a>
-        </form>
-        
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo"><a href="index.html">TIC TOC TOE</a></div>
+    <ul class="links">
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="game.html">Games</a></li>
+      <li><a href="comingsoon.html">About</a></li>
+      <li><a href="comingsoon.html">Login</a></li>
+    </ul>
+    <a href="#" class="action-btn">Get Started</a>
+    <div class="toggle_btn">
+      <i class="fa-solid fa-bars"></i>
     </div>
-    <script src="login.js"></script>
+  </div>
+
+  <!-- Dropdown Menu for Mobile -->
+  <div class="dropdown_menu">
+    <li><a href="profile.html">Profile</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="game.html">Games</a></li>
+    <li><a href="comingsoon.html">About</a></li>
+    <li><a href="comingsoon.html">Login</a></li>
+    <li><a href="#" class="action-btn">Get Started</a></li>
+  </div>
+
+  <!-- Login Box -->
+  <div class="login-box">
+    <h2>Login</h2>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+
+      <div class="buttons">
+        <button type="submit">Login</button>
+        <button type="button" onclick="location.href='index.html'">Go to Home</button>
+      </div>
+    </form>
+  </div>
+
 </body>
 </html>
