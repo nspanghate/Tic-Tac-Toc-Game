@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("asphalt-dark-dawn-531321.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  /* backdrop-filter: blur(3px); */
+}
+
+.login-container {
+  /* background-image: url("pic1.jpg"); */
+  backdrop-filter: blur(3px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: inherit;
+  /* background-color: rgb(76, 180, 39); */
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 77%);
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #fff5f5;
+  /* backdrop-filter: blur(5px); */
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: rgb(255, 255, 255);
+  /* backdrop-filter: blur(5px); */
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  margin-left: 20px;
+}
+
+#go-home-button {
+  margin-top: 20px;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: right;
+  padding: 10px;
+}
+#go-home-button:hover {
+  background-color: #05452b;
+  color: white;
+}
+
+button:hover {
+  background-color: #05452b;
+  filter: invert(50px);
+}
